@@ -7,7 +7,14 @@
 
 def main():
     #Write your code here
-    
+    time = int(input('Time to launch: '))
+    print('Counting down ...')
+    counter = time
+    while counter != 0:
+      print(f'{counter} ...')
+      counter -= 1
+    print('Blast Off!')
+
 
     
     # End of your code here
