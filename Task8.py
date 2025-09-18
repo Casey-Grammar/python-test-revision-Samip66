@@ -16,13 +16,10 @@
 def main():
     #Write your code here
     name = input('First and Last Name? ')
-    first = name[0]
-    last = name[1]
-    for l in first:
-      p1 = l[0] + l[1]
-    for e in last:
-      p2 = e[-4] + e[-3] + e[-2] + e[-1]
-    print(f'{p1} + {p2}')
+    first, last = name.split()
+    p1 = first[:2]
+    p2 = last[-4:]
+    print(f'{p1}{p2}')
 
 
     # End of your code here
